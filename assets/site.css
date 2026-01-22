@@ -21,7 +21,7 @@
 html,body{height:100%}
 
 
-h1,h2,h3,.h1,.brandG2,.brandWord,.cardTitle{font-family: var(--font-head);}
+h1,h2,h3,.h1,.cardTitle{font-family: var(--font-head);}
 html{font-size-adjust:0.5;}
 
 body{
@@ -369,3 +369,7 @@ textarea.field{min-height:110px; resize:vertical}
 
 
 .ghost{visibility:hidden;}
+
+
+.wordmarkSvg{max-width:340px;width:100%;height:auto;display:block;}
+.brandMark{display:flex;align-items:center;justify-content:center;}
