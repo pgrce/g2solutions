@@ -322,7 +322,7 @@ textarea.field{min-height:110px; resize:vertical}
   gap:12px;
   margin-bottom: 14px;
 }
-.backLink{color: var(--muted2); text-decoration:none; font-size: 12px;}
+.backLink{text-decoration:none;color:rgba(233,238,247,.62);padding:8px 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;user-select:none;opacity:.6;transition:color .15s ease, transform .15s ease, opacity .15s ease;}
 .backLink:hover{text-decoration:underline;}
 .backLink:hover{ text-decoration: underline; }
 
