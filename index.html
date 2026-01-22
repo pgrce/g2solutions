@@ -7,7 +7,9 @@
   <title>G2 Solutions</title>
   <script>
     (function () {
-      var saved = localStorage.getItem('g2_lang');
+      var saved = null;
+      try { saved = localStorage.getItem('g2_lang'); } catch (e) {}
+
       if (saved === 'hr') { location.replace('./hr/'); return; }
       if (saved === 'en') { location.replace('./en/'); return; }
 
@@ -22,10 +24,7 @@
 </head>
 <body>
   <noscript>
-    <p>
-      Please choose:
-      <a href="./en/">English</a> · <a href="./hr/">Hrvatski</a>
-    </p>
+    <p>Please choose: <a href="./en/">English</a> · <a href="./hr/">Hrvatski</a></p>
   </noscript>
 </body>
 </html>
