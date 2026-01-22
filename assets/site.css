@@ -39,7 +39,7 @@ a{color:inherit}
   position:relative;
 }
 
-.topbar{display:flex; align-items:center; justify-content:flex-end; margin-bottom:16px;}
+.topbar{display:flex; align-items:center; justify-content:space-between; min-height:32px; margin-bottom:16px;}
 
 .lang{
   display:flex;
@@ -197,7 +197,7 @@ textarea.field{min-height:110px; resize:vertical}
 
 @media (min-width: 860px){
   .wrap{ padding: 34px 0 46px; }
-  .topbar{ margin-bottom: 22px; }
+  .topbar{display:flex; align-items:center; justify-content:space-between; min-height:32px; margin-bottom:16px;}
   .hero{ padding: 34px 34px 26px;}
   .panel{ padding: 34px;}
   .grid3{ grid-template-columns: 1fr 1fr 1fr; gap: 16px;}
@@ -207,7 +207,7 @@ textarea.field{min-height:110px; resize:vertical}
 
 @media (max-width: 520px){
   .wrap{ width: min(var(--max), calc(100% - 32px)); padding-top: 12px; }
-  .topbar{ margin-bottom: 8px; }
+  .topbar{display:flex; align-items:center; justify-content:space-between; min-height:32px; margin-bottom:16px;}
   .brandCard{ padding: 30px 18px 18px; border-radius: 18px; }
   .brandMark{ gap: 14px; }
   .brandG2{ font-size: 52px; }
@@ -322,11 +322,8 @@ textarea.field{min-height:110px; resize:vertical}
   gap:12px;
   margin-bottom: 14px;
 }
-.backLink{
-  color: var(--muted2);
-  text-decoration:none;
-  font-size: 14px;
-}
+.backLink{color: var(--muted2); text-decoration:none; font-size: 12px;}
+.backLink:hover{text-decoration:underline;}
 .backLink:hover{ text-decoration: underline; }
 
 .serviceGrid{
@@ -364,3 +361,6 @@ textarea.field{min-height:110px; resize:vertical}
 
 .lang a{ text-decoration:none; }
 .lang a:hover{ text-decoration: underline; }
+
+
+.ghost{visibility:hidden;}
