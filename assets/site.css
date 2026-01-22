@@ -11,6 +11,8 @@
   --accent:#1D4ED8;
   --accent2:#22C1C3;
   --accent3:#8B5CF6;
+  --accent4:#22C55E; /* green */
+  --accent5:#F59E0B; /* amber (use sparingly) */
   --white:#FFFFFF;
   --cardRadius:18px;
   --max:980px;
@@ -35,11 +37,19 @@ a{color:inherit}
 .wrap{
   width: min(var(--max), calc(100% - 48px));
   margin: 0 auto;
-  padding: 28px 0 46px;
+  padding: 0 0 46px;
   position:relative;
 }
 
-.topbar{display:flex; align-items:center; justify-content:space-between; min-height:32px; margin-bottom:16px;}
+.topbar{
+  width: min(var(--max), calc(100% - 48px));
+  margin: 0 auto 16px;
+  padding: 28px 0 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:32px;
+}
 
 .lang{
   display:flex;
@@ -197,7 +207,15 @@ textarea.field{min-height:110px; resize:vertical}
 
 @media (min-width: 860px){
   .wrap{ padding: 34px 0 46px; }
-  .topbar{display:flex; align-items:center; justify-content:space-between; min-height:32px; margin-bottom:16px;}
+.topbar{
+  width: min(var(--max), calc(100% - 48px));
+  margin: 0 auto 16px;
+  padding-top: 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:32px;
+}
   .hero{ padding: 34px 34px 26px;}
   .panel{ padding: 34px;}
   .grid3{ grid-template-columns: 1fr 1fr 1fr; gap: 16px;}
@@ -309,6 +327,10 @@ textarea.field{min-height:110px; resize:vertical}
 .icon.tone-blue{ color: var(--accent); }
 .icon.tone-teal{ color: var(--accent2); }
 .icon.tone-purple{ color: var(--accent3); }
+.icon.tone-green{ color: var(--accent4); }
+.icon.tone-amber{ color: var(--accent5); }
+.icon.tone-green{ color: var(--accent4); }
+.icon.tone-amber{ color: var(--accent5); }
 
 .cardTitle{
   margin:2px 0 4px;
