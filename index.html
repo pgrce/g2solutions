@@ -7,15 +7,11 @@
   <title>G2 Solutions</title>
   <script>
     (function () {
-      // 1) ako je user već odabrao jezik ručno, poštuj to
       var saved = localStorage.getItem('g2_lang');
       if (saved === 'hr') { location.replace('./hr/'); return; }
       if (saved === 'en') { location.replace('./en/'); return; }
 
-      // 2) inače koristi browser jezik
       var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-
-      // hr/hr-hr/hr-* -> hrvatski, ostalo engleski
       if (lang === 'hr' || lang.startsWith('hr-')) {
         location.replace('./hr/');
       } else {
@@ -25,10 +21,10 @@
   </script>
 </head>
 <body>
-  <!-- Fallback ako je JS isključen -->
   <noscript>
     <p>
-      Please choose: <a href="./en/">English</a> · <a href="./hr/">Hrvatski</a>
+      Please choose:
+      <a href="./en/">English</a> · <a href="./hr/">Hrvatski</a>
     </p>
   </noscript>
 </body>

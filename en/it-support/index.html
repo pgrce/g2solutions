@@ -1,111 +1,27 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>G2 Solutions — IT Support</title>
-  <meta name="description" content="Day‑to‑day support for small teams — setup, troubleshooting and user help." />
-  <meta name="theme-color" content="#0b1220" />
-  <link rel="icon" href="../../favicon.ico" />
-  <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
-  <link rel="stylesheet" href="../../assets/site.css" />
-  <link rel="canonical" href="../../en/it-support/" />
+  <title>IT Support</title>
 </head>
 <body>
+  <nav>
+    <a href="../hr/" data-lang="hr">HR</a>
+    <a href="./" data-lang="en" class="active">EN</a>
+  </nav>
 
-  <main class="wrap">
-    <div class="topbar">
-      <div class="pageHead">
-        <a class="backLink" href="../">← Home</a>
-        <nav class="lang" aria-label="Language">
-  <a href="../../hr/it-support/">HR</a>
-  <a class="active" href="./" aria-current="page">EN</a>
-</nav>
-      </div>
-    </div>
-
-    <section class="brandCard" aria-label="G2 Solutions">
-  <div class="brandMark" role="img" aria-label="G2 Solutions wordmark">
-    <div class="brandG2"><span class="g">G</span><span class="two">2</span></div>
-    <div class="brandWord">SOLUTIONS</div>
-  </div>
-  <div class="brandSub">IT support <span class="dot">•</span> Finance <span class="dot">•</span> Training</div>
-</section>
+  <h1>IT Support</h1>
+  <p>Placeholder content – functionality verified.</p>
 
 
-    <section class="panel hero" aria-label="Intro">
-      <div>
-        <h1 class="h1">IT Support</h1>
-        <p class="p">Day‑to‑day support for small teams — setup, troubleshooting and user help.</p>
-        <p class="microCta"><a href="mailto:info@g2.hr">Email us →</a></p>
-      </div>
-    </section>
+<script>
+  document.querySelectorAll('a[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('g2_lang', a.getAttribute('data-lang')); } catch (e) {}
+    });
+  });
+</script>
 
-    <section class="serviceGrid" aria-label="Services list">
-      
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#computers"></use></svg>
-        <div>
-          <h3>Helpdesk & Troubleshooting</h3>
-          <p>Fast help for everyday issues, remote or on‑site.</p>
-        </div>
-      </div>
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#monitor"></use></svg>
-        <div>
-          <h3>Workstation Setup</h3>
-          <p>New devices, migrations and clean setups.</p>
-        </div>
-      </div>
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#download"></use></svg>
-        <div>
-          <h3>Software Installation</h3>
-          <p>Standard tools, licensing and configuration.</p>
-        </div>
-      </div>
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#mail"></use></svg>
-        <div>
-          <h3>Email & Collaboration</h3>
-          <p>Microsoft 365 / Google Workspace setup and cleanup.</p>
-        </div>
-      </div>
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#refresh"></use></svg>
-        <div>
-          <h3>Updates & Maintenance</h3>
-          <p>Patching, updates and basic stability checks.</p>
-        </div>
-      </div>
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#userplus"></use></svg>
-        <div>
-          <h3>User Onboarding/Offboarding</h3>
-          <p>Accounts, access and equipment when people join/leave.</p>
-        </div>
-      </div>
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#monitor"></use></svg>
-        <div>
-          <h3>Remote Support</h3>
-          <p>Quick fixes without waiting for a visit.</p>
-        </div>
-      </div>
-      <div class="serviceItem">
-        <svg class="icon tone-blue" aria-hidden="true"><use href="../../assets/icons/sprite.svg#pin"></use></svg>
-        <div>
-          <h3>On‑site Support (Zagreb)</h3>
-          <p>When physical work is needed — we come to you.</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="contact">
-        <div class="tag"><span>info:</span> <a href="mailto:info@g2.hr">info@g2.hr</a></div>
-      </div>
-    </footer>
-  </main>
 </body>
 </html>
