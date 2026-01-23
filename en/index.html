@@ -116,6 +116,12 @@
       try { el.focus({ preventScroll: true }); } catch(e){ el.focus(); }
     }
 
+    // If we land on this page with #contact (e.g. from a subpage), focus the first field
+    if(window.location.hash === '#contact'){
+      if(prefersReduced) focusContact();
+      else window.setTimeout(focusContact, 350);
+    }
+
     document.querySelectorAll('a[href^="#"]').forEach(function(a){
       a.addEventListener('click', function(e){
         const id = a.getAttribute('href');

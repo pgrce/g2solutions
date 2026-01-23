@@ -176,6 +176,11 @@ a{color:inherit}
 .contact{padding:22px;}
 .contact h2{margin:0 0 6px; font-size:20px; letter-spacing:-.02em;}
 .contact .note{margin:0 0 14px; color:rgba(233,238,247,.68); font-size:13.5px;}
+
+.cta{padding:22px;}
+.cta h3{margin:0 0 6px; font-size:20px; letter-spacing:-.02em;}
+.cta .note{margin:0 0 14px; color:rgba(233,238,247,.68); font-size:13.5px;}
+
 .form{display:grid; gap:12px;}
 .field{
   width:100%;
@@ -195,6 +200,8 @@ textarea.field{min-height:110px; resize:vertical}
   background: rgba(255,255,255,.04);
 }
 .btn{
+  display:inline-block;
+  text-decoration:none;
   border:0;
   border-radius:12px;
   padding:12px 14px;
