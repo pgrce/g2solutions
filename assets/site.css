@@ -396,3 +396,12 @@ textarea.field{min-height:110px; resize:vertical}
 .tone-sky{ color: var(--accent7); }
 .tone-fuchsia{ color: var(--accent8); }
 .tone-sand{ color: var(--accent9); }
+
+/* Dodatak za ljepše pozicioniranje na anchor linkove */
+html {
+  scroll-behavior: smooth;
+}
+
+#contact {
+  scroll-margin-top: 60px; /* Ostavlja 60px prostora iznad forme nakon klika */
+}
