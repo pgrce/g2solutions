@@ -73,9 +73,16 @@
 <section id="contact" class="panel contact" aria-label="Kontakt forma" style="margin-top:16px">
   <h3>Kontakt</h3>
   <p class="note">Obično odgovaramo unutar 24 sata radnim danom.</p>
-  <form class="form" action="mailto:info@g2.hr" method="post" enctype="text/plain">
+  
+  <form class="form" action="https://formsubmit.co/info@g2.hr" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_next" value="https://pgrce.github.io/g2solutions/hr/hvala.html">
+    
     <input id="contactName" class="field" name="name" type="text" placeholder="Ime i tvrtka" autocomplete="name" required />
-<textarea class="field" name="message" placeholder="Poruka" required></textarea>
+    <input type="email" class="field" name="email" placeholder="Email adresa" required />
+    <textarea class="field" name="message" placeholder="Poruka" required></textarea>
+    
     <button class="btn" type="submit">Pošalji email</button>
   </form>
 </section>

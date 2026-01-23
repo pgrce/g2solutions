@@ -11,20 +11,18 @@
   --accent:#1D4ED8;
   --accent2:#22C1C3;
   --accent3:#8B5CF6;
-  --accent4:#22C55E; /* green */
-  --accent5:#F59E0B; /* amber (use sparingly) */
-
-  --accent6:#F43F5E; /* rose */
-  --accent7:#38BDF8; /* sky */
-  --accent8:#D946EF; /* fuchsia */
-  --accent9:#D6B27C; /* muted sand */
+  --accent4:#22C55E;
+  --accent5:#F59E0B;
+  --accent6:#F43F5E;
+  --accent7:#38BDF8;
+  --accent8:#D946EF;
+  --accent9:#D6B27C;
   --white:#FFFFFF;
   --cardRadius:18px;
   --max:980px;
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-html{font-size-adjust:0.5;}
 
 body{
   margin:0;
@@ -243,11 +241,11 @@ textarea.field{min-height:110px; resize:vertical}
   .microCta{ display:none; }
 }
 
-/* Floating mail sticky - "reverse D" (flat on the right edge) */
+/* Floating mail sticky */
 .floatMail{
   display:flex;
   position:fixed;
-  right: 0; /* touches the edge */
+  right: 0;
   bottom: calc(28px + env(safe-area-inset-bottom));
   z-index: 999;
   transition: opacity .18s ease, transform .18s ease;
@@ -262,11 +260,11 @@ textarea.field{min-height:110px; resize:vertical}
   height: 54px;
   display:flex;
   align-items:center;
-  justify-content:center; /* reverse D shape */
+  justify-content:center;
   background: linear-gradient(90deg, #6AA6FF, #7EE7E7, #91F7C2);
   color: #081023;
   text-decoration:none;
-  box-shadow: 0 14px 40px rgba(0,0,0,.45); /* cleaner edge contact */
+  box-shadow: 0 14px 40px rgba(0,0,0,.45);
   border: 0;
   outline: 0;
   overflow: hidden;
@@ -274,12 +272,12 @@ textarea.field{min-height:110px; resize:vertical}
   transform: translateZ(0);
   border-radius: 999px 0 0 999px;
 }
-.floatMail svg{ display:block; transform: translateY(-.5px); } /* nudge up to optical center */
+.floatMail svg{ display:block; transform: translateY(-.5px); }
 .floatMail a:active{ transform: translateY(1px); }
 
 @media (max-width: 900px){
   .floatMail{
-    bottom: calc(96px + env(safe-area-inset-bottom)); /* above iOS toolbar */
+    bottom: calc(96px + env(safe-area-inset-bottom));
   }
   .floatMail a{
     width: 66px;
@@ -287,13 +285,11 @@ textarea.field{min-height:110px; resize:vertical}
   }
 }
 
-/* Accessibility: visible keyboard focus (keeps mouse clicks clean via :focus-visible) */
 :is(a,button,input,textarea,select,[tabindex]):focus-visible{
   outline:2px solid var(--accent);
   outline-offset:3px;
   border-radius:10px;
 }
-
 
 /* v2 additions */
 .serviceCards{
@@ -341,8 +337,6 @@ textarea.field{min-height:110px; resize:vertical}
 .icon.tone-purple{ color: var(--accent3); }
 .icon.tone-green{ color: var(--accent4); }
 .icon.tone-amber{ color: var(--accent5); }
-.icon.tone-green{ color: var(--accent4); }
-.icon.tone-amber{ color: var(--accent5); }
 
 .cardTitle{
   margin:2px 0 4px;
@@ -362,7 +356,6 @@ textarea.field{min-height:110px; resize:vertical}
   margin-bottom: 14px;
 }
 .backLink{color: var(--muted2); text-decoration:none; font-size: 12px;}
-.backLink:hover{text-decoration:underline;}
 .backLink:hover{ text-decoration: underline; }
 
 .serviceGrid{
@@ -398,16 +391,8 @@ textarea.field{min-height:110px; resize:vertical}
   line-height: 1.45;
 }
 
-.lang a{ text-decoration:none; }
-.lang a:hover{ text-decoration: underline; }
-
-
 .ghost{visibility:hidden;}
-
 .tone-rose{ color: var(--accent6); }
-
 .tone-sky{ color: var(--accent7); }
-
 .tone-fuchsia{ color: var(--accent8); }
-
 .tone-sand{ color: var(--accent9); }
