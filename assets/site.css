@@ -13,6 +13,11 @@
   --accent3:#8B5CF6;
   --accent4:#22C55E; /* green */
   --accent5:#F59E0B; /* amber (use sparingly) */
+
+  --accent6:#F43F5E; /* rose */
+  --accent7:#38BDF8; /* sky */
+  --accent8:#D946EF; /* fuchsia */
+  --accent9:#D6B27C; /* muted sand */
   --white:#FFFFFF;
   --cardRadius:18px;
   --max:980px;
@@ -391,3 +396,11 @@ textarea.field{min-height:110px; resize:vertical}
 
 
 .ghost{visibility:hidden;}
+
+.tone-rose{ color: var(--accent6); }
+
+.tone-sky{ color: var(--accent7); }
+
+.tone-fuchsia{ color: var(--accent8); }
+
+.tone-sand{ color: var(--accent9); }
