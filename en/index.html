@@ -114,10 +114,12 @@
     function focusContact(){
       const el = document.getElementById('contactName');
       if(!el) return;
-      // Mala odgoda da budemo sigurni da je skrolanje završilo
+      
+      // PROMJENA: Povećano vrijeme čekanja sa 100 na 500ms
+      // Ovo osigurava da je skrolanje završilo prije nego što fokusiramo polje
       setTimeout(() => {
         try { el.focus({ preventScroll: true }); } catch(e){ el.focus(); }
-      }, 100);
+      }, 500);
     }
 
     // 1. Check URL parameters on page load (dolazak s druge stranice)
