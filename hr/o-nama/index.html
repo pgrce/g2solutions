@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-
 <html lang="hr">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>G2 Solutions — O nama</title>
-<meta content="Izravna suradnja, jasna komunikacija i konkretan rezultat kroz IT podršku i financije." name="description"/>
+<meta content="Izravan i praktičan pristup IT-u i financijama." name="description"/>
 <meta content="#0b1220" name="theme-color"/>
 <link href="../../favicon.ico" rel="icon"/>
-<link href="../../apple-touch-icon.png" rel="apple-touch-icon"/>
 <link href="../../assets/site.css" rel="stylesheet"/>
-<link href="../../hr/o-nama/" rel="canonical"/>
 </head>
 <body>
-<div class="topbar"><a class="backLink" href="../">← Home</a>
-<nav aria-label="Language" class="lang">
-<a aria-current="page" class="active" data-lang="hr" href="./">HR</a>
-<a data-lang="en" href="../../en/about/">EN</a>
-</nav></div>
+<div class="bg"></div>
+<header class="topbar">
+  <a class="back" href="../">← Naslovnica</a>
+  <nav class="lang">
+    <a href="../../hr/" class="langLink">HR</a>
+    <a href="../../en/" class="langLink">EN</a>
+  </nav>
+</header>
 <main class="wrap">
-
 <section aria-label="G2 Solutions" class="brandCard">
   <div aria-label="G2 Solutions wordmark" class="brandMark" role="img">
     <div class="brandG2"><span class="g">G</span><span class="two">2</span></div>
@@ -28,60 +27,30 @@
   <div class="brandSub">IT podrška <span class="dot">•</span> Financije</div>
 </section>
 
-<section aria-label="Uvod" class="panel hero">
+<section aria-label="O nama" class="panel hero">
   <div>
     <h1 class="h1">O nama</h1>
-    <p class="p">Izravna suradnja, jasna komunikacija i konkretan rezultat.</p>
+    <p class="p">Radimo jednostavno i izravno — fokusirani na rješenja koja stvarno pomažu u svakodnevnom radu.</p>
     <p class="microCta"><a href="mailto:info@g2.hr">Pošalji email →</a></p>
   </div>
 </section>
 
-<section aria-label="Kako radimo" class="serviceGrid">
-  <div class="serviceItem">
-    <svg aria-hidden="true" class="icon tone-blue"><use href="../../assets/icons/sprite.svg#flow"></use></svg>
-    <div>
-      <h3>Kako radimo</h3>
-      <p>Jednostavno: pregled, dogovor prioriteta, rješenje, dokumentacija i poboljšanja.</p>
-    </div>
-  </div>
-
-  <div class="serviceItem">
-    <svg aria-hidden="true" class="icon tone-teal"><use href="../../assets/icons/sprite.svg#checksquare"></use></svg>
-    <div>
-      <h3>Što možete očekivati</h3>
-      <p>Jasne korake, normalnu komunikaciju i bez nepotrebnih komplikacija.</p>
-    </div>
-  </div>
-
-  <div class="serviceItem">
-    <svg aria-hidden="true" class="icon tone-purple"><use href="../../assets/icons/sprite.svg#handshake"></use></svg>
-    <div>
-      <h3>Suradnja</h3>
-      <p>Po potrebi ili kontinuirano, ovisno o situaciji.</p>
-    </div>
-  </div>
-
-  <div class="serviceItem">
-    <svg aria-hidden="true" class="icon tone-sand"><use href="../../assets/icons/sprite.svg#chat"></use></svg>
-    <div>
-      <h3>Jedna kontakt točka</h3>
-      <p>Radite direktno s ljudima koji to i rade.</p>
-    </div>
-  </div>
+<section class="panel cta" aria-label="Kontakt poziv na akciju" style="margin-top:16px">
+  <h2 class="h1" style="font-size:20px;margin:0 0 8px">Imate pitanje ili trebate podršku?</h2>
+  <p class="p" style="margin:0 0 14px">Javite se i odgovorit ćemo unutar jednog radnog dana.</p>
+  <a class="btn" href="mailto:info@g2.hr">Pošalji email</a>
 </section>
 
-<footer class="footer">
-  <div class="contact">
-    <div class="tag"><span>info:</span> <a href="mailto:info@g2.hr">info@g2.hr</a></div>
-  </div>
-</footer>
+<footer class="footer">© 2026 G2 Solutions · <a href="mailto:info@g2.hr">info@g2.hr</a></footer>
 </main>
-<script>
-  document.querySelectorAll('a[data-lang]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      try { localStorage.setItem('g2_lang', a.getAttribute('data-lang')); } catch (e) {}
-    });
-  });
-</script>
+
+<div class="floatMail" aria-label="Quick email shortcut">
+  <a href="../?focus=contactName#contact" title="Pošalji upit" aria-label="Pošalji upit" data-focus="contactName">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
 </body>
 </html>

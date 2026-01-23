@@ -107,7 +107,7 @@ a{color:inherit}
 .brandG2 .g{color:#0F172A}
 .brandG2 .two{color:var(--accent); margin-left:2px;}
 .brandWord{font-weight:700; font-size:44px; letter-spacing:.04em; line-height:1;}
-.brandSub{margin-top:16px; font-size:15px; color:rgba(15,23,42,.72); letter-spacing:.06em;}
+.brandSub{margin-top:16px; font-size:15px; color:rgba(15,23,42,.72); letter-spacing:.10em;}
 .brandSub .dot{color:var(--accent); padding:0 10px; font-weight:900}
 
 .panel{
@@ -235,7 +235,7 @@ textarea.field{min-height:110px; resize:vertical}
   .brandMark{ gap: 14px; }
   .brandG2{ font-size: 52px; }
   .brandWord{ font-size: 34px; letter-spacing: .03em; }
-  .brandSub{ font-size: 14px; letter-spacing: .05em; margin-top: 14px; }
+  .brandSub{ font-size: 14px; letter-spacing: .08em; margin-top: 14px; }
   .h1{ font-size: 38px; }
 }
 
@@ -244,40 +244,47 @@ textarea.field{min-height:110px; resize:vertical}
 }
 
 /* Floating mail sticky - "reverse D" (flat on the right edge) */
-.floatMail{ display:none; }
+.floatMail{
+  display:flex;
+  position:fixed;
+  right: 0; /* touches the edge */
+  bottom: calc(28px + env(safe-area-inset-bottom));
+  z-index: 999;
+  transition: opacity .18s ease, transform .18s ease;
+}
+.floatMail.is-hidden{
+  opacity:0;
+  pointer-events:none;
+  transform: translateX(10px);
+}
+.floatMail a{
+  width: 72px;
+  height: 54px;
+  display:flex;
+  align-items:center;
+  justify-content:center; /* reverse D shape */
+  background: linear-gradient(90deg, #6AA6FF, #7EE7E7, #91F7C2);
+  color: #081023;
+  text-decoration:none;
+  box-shadow: 0 14px 40px rgba(0,0,0,.45); /* cleaner edge contact */
+  border: 0;
+  outline: 0;
+  overflow: hidden;
+  background-clip: padding-box;
+  transform: translateZ(0);
+  border-radius: 999px 0 0 999px;
+}
+.floatMail svg{ display:block; transform: translateY(-.5px); } /* nudge up to optical center */
+.floatMail a:active{ transform: translateY(1px); }
+
 @media (max-width: 900px){
   .floatMail{
-    display:flex;
-    position:fixed;
-    right: 0; /* touches the edge */
-    bottom: calc(96px + env(safe-area-inset-bottom)); /* lower on screen, above iOS toolbar */
-    z-index: 999;
-    transition: opacity .18s ease, transform .18s ease;
-  }
-  .floatMail.is-hidden{
-    opacity:0;
-    pointer-events:none;
-    transform: translateX(10px);
+    bottom: calc(96px + env(safe-area-inset-bottom)); /* above iOS toolbar */
   }
   .floatMail a{
     width: 66px;
     height: 48px;
-    display:flex;
-    align-items:center;
-    justify-content:center; /* reverse D shape */
-    background: linear-gradient(90deg, #6AA6FF, #7EE7E7, #91F7C2);
-    color: #081023;
-    text-decoration:none;
-    box-shadow: 0 14px 40px rgba(0,0,0,.45); /* cleaner edge contact */
-    border: 0;
-    outline: 0;
-    overflow: hidden;
-    background-clip: padding-box;
-    transform: translateZ(0);
-    border-radius: 999px 0 0 999px;
   }
-  .floatMail svg{ display:block; transform: translateY(-.5px); } /* nudge up to optical center */
-  .floatMail a:active{ transform: translateY(1px); }
 }
 
 /* Accessibility: visible keyboard focus (keeps mouse clicks clean via :focus-visible) */
