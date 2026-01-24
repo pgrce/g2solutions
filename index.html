@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noindex, follow" />
   <title>G2 Solutions</title>
-  <noscript>
-    <meta http-equiv="refresh" content="0;url=./en/">
-  </noscript>
+  
+  <link rel="alternate" hreflang="en" href="https://pgrce.github.io/g2solutions/en/" />
+  <link rel="alternate" hreflang="hr" href="https://pgrce.github.io/g2solutions/hr/" />
+  <link rel="alternate" hreflang="x-default" href="https://pgrce.github.io/g2solutions/" />
+
   <script>
+    /* ... tvoja postojeća skripta za redirect ... */
     (function () {
       var saved = null;
       try { saved = localStorage.getItem('g2_lang'); } catch (e) {}
-
       if (saved === 'hr') { location.replace('./hr/'); return; }
       if (saved === 'en') { location.replace('./en/'); return; }
-
       var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
       if (lang === 'hr' || lang.startsWith('hr-')) {
         location.replace('./hr/');
