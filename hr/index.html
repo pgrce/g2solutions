@@ -30,23 +30,35 @@
   <link href="../apple-touch-icon.png" rel="apple-touch-icon"/>
   <link href="../assets/site.css" rel="stylesheet"/>
 
-  <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://pgrce.github.io/g2solutions/#identity",
-    "name": "G2 Solutions",
-    "url": "https://pgrce.github.io/g2solutions/hr/",
-    "logo": "https://pgrce.github.io/g2solutions/g2-wordmark.svg",
-    "image": "https://pgrce.github.io/g2solutions/assets/og-image.png",
-    "description": "Praktična IT podrška i financijsko savjetovanje.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Zagreb",
-      "addressCountry": "HR"
-    },
-    "email": "info@g2.hr",
-    "priceRange": "$$"
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://pgrce.github.io/g2solutions/#identity",
+        "name": "G2 Solutions",
+        "url": "https://pgrce.github.io/g2solutions/hr/",
+        "logo": "https://pgrce.github.io/g2solutions/g2-wordmark.svg",
+        "image": "https://pgrce.github.io/g2solutions/assets/og-image.png",
+        "description": "Praktična IT podrška i financijsko savjetovanje.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Zagreb",
+          "addressCountry": "HR"
+        },
+        "email": "info@g2.hr",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://pgrce.github.io/g2solutions/#website",
+        "url": "https://pgrce.github.io/g2solutions/hr/",
+        "name": "G2 Solutions",
+        "inLanguage": "hr-HR",
+        "publisher": { "@id": "https://pgrce.github.io/g2solutions/#identity" }
+      }
+    ]
   }
   </script>
 </head>
