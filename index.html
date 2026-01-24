@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex, follow" />
-  <title>G2 Solutions</title>
+  <title>G2 Solutions — IT support & finance</title>
   
-  <link rel="alternate" hreflang="en" href="https://pgrce.github.io/g2solutions/en/" />
-  <link rel="alternate" hreflang="hr" href="https://pgrce.github.io/g2solutions/hr/" />
-  <link rel="alternate" hreflang="x-default" href="https://pgrce.github.io/g2solutions/" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pgrce.github.io/g2solutions/">
+  <meta property="og:title" content="G2 Solutions — IT support & finance">
+  <meta property="og:description" content="Practical IT support, financial consulting, and training. Straightforward and dependable.">
+  <meta property="og:image" content="https://pgrce.github.io/g2solutions/assets/og-image.png">
 
   <script>
-    /* ... tvoja postojeća skripta za redirect ... */
     (function () {
       var saved = null;
       try { saved = localStorage.getItem('g2_lang'); } catch (e) {}
+
       if (saved === 'hr') { location.replace('./hr/'); return; }
       if (saved === 'en') { location.replace('./en/'); return; }
+
       var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
       if (lang === 'hr' || lang.startsWith('hr-')) {
         location.replace('./hr/');
