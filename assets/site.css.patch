@@ -1,8 +1,0 @@
-/* CTA spacing fix */
-.panel.cta p.p {
-  margin: 0 0 20px;
-}
-
-.panel.cta .btn {
-  margin-top: 0;
-}
